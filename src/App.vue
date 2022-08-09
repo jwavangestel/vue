@@ -6,8 +6,8 @@ import { RouterLink, RouterView } from 'vue-router'
 <template>
   <div id="app">
     <div id="nav">
-      <RouterLink to="/">Events</RouterLink> | 
-      <RouterLink to="/about">About</RouterLink>
+      <RouterLink :to="{ name: 'EventList' }">Events</RouterLink> | 
+      <RouterLink :to="{ name: 'About'}">About</RouterLink>
     </div>
     <router-view></router-view>
   </div>
